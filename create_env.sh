@@ -8,10 +8,10 @@
 conda install pytorch==2.0.1 torchvision==0.15.2 torchaudio==2.0.2 pytorch-cuda=11.8 -c pytorch -c nvidia
 conda install -y -c conda-forge -c bioconda -c biocore absl-py  openbabel pandas requests scikit-learn=1.4.1.post1 scipy  tensorflow=2.11.0 omegaconf gitpython hydra-core numpy h5py hdf5 icecream click deepdiff
 
-pip install dgl -f https://data.dgl.ai/wheels/cu118/repo.html
-
+#pip install dgl -f https://data.dgl.ai/wheels/cu118/repo.html
+conda install -c dglteam/label/th21_cu124 dgl
 # Tools of sequence preprocessing
-conda install -y -c conda-forge -c bioconda -c predector  -c biocore hhsuite signalp6 psipred
+conda install -y -c conda-forge -c bioconda -c predector  -c biocore hhsuite psipred
 
 pip install git+https://github.com/YaoYinYing/SE3Transformer@rf2aa
 
